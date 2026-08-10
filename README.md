@@ -13,6 +13,16 @@ python3 -m streamlit run app.py
 
 或在 Finder 雙擊 `睡眠報告.command`。
 
+## 直接產出 HTML 報告(不開 App)
+
+```bash
+python3 export_report.py <PSG.edf> <Hypnogram.edf> <輸出.html>
+```
+
+不帶引數時讀 `../EDF檢視器/` 的 SC4002 範例檔。產出單一 HTML 檔,圖表可互動、離線可開,
+用瀏覽器列印即成 PDF。範例成品:[`sample_report.html`](sample_report.html)
+(GitHub 上請下載後開啟,或用 [HTML Preview](https://html-preview.github.io/?url=https://github.com/terry60509/sleep-report/blob/main/sample_report.html) 線上看)。
+
 ## 資料來源
 
 | 模式 | 說明 |
